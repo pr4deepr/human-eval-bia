@@ -1,19 +1,21 @@
 
 # List of use-cases
-This list of 57 use-cases is auto-generated. Do not modify this file.
+This list of 58 use-cases is auto-generated. Do not modify this file.
 
 
 * [apply_otsu_threshold_and_count_postiive_pixels](apply_otsu_threshold_and_count_postiive_pixels.ipynb): 
     Takes an image as numpy array, applies Otsu's threshold method to it to create a binary image and 
-    counts the positive pixels and returns this number.
+    counts the positive pixels and returns this number. Use scikit image library.
     
         
 * [binary_closing](binary_closing.ipynb): 
     Applies binary closing with a square footprint with a given radius to a binary_image provided as numpy array and returns the result as numpy array.
+    Use scikit image library.
     
         
 * [binary_skeleton](binary_skeleton.ipynb): 
     Applies skeletonization to a 2D binary image provided as numpy array and returns the resulting skeleton image as numpy array.
+    Use scikit image library.
     
         
 * [bland_altman](bland_altman.ipynb): 
@@ -45,12 +47,13 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
 * [count_objects_over_time](count_objects_over_time.ipynb): 
     Takes a timelapse (list of binary images provided as numpy arrays), counts the number 
     of connected components for each time frame and returns the resulting counts as list.
+    Use scikit image library.
     
         
 * [count_overlapping_regions](count_overlapping_regions.ipynb): 
     Takes two label images provided as numpy arrays and counts how many objects in 
     label_image_1 overlap with any labeled object in label_image_2 with at least 
-    one pixel. It returns the count of overlapping objects.
+    one pixel. It returns the count of overlapping objects.Use scikit image library.
     
         
 * [create_umap](create_umap.ipynb): 
@@ -74,28 +77,33 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
         
 * [expand_labels_without_overlap](expand_labels_without_overlap.ipynb): 
     Takes a label_image provided as numpy array and enlarges all labels by a given radius, without
-    labels overwriting each other. The resulting label image is returned as numpy array.
+    labels overwriting each other. The resulting label image is returned as numpy array.Use scikit image library.
     
         
 * [extract_surface_measure_area](extract_surface_measure_area.ipynb): 
     Take a 3D binary_volume_image provided as numpy array, extracts the surface of the white (voxel value != 0) object 
-    and returns the surface area of the object.
+    and returns the surface area of the object.Use scikit image library.
     
         
 * [fit_circle](fit_circle.ipynb): 
     Fits a circle to points provided as list of (y,x) coordinates and 
-    returns a tuple of (yc, xc, radius) describing the circle.
+    returns a tuple of (yc, xc, radius) describing the circle.Use scikit image library.
+    
+        
+* [generate_image_histogram](generate_image_histogram.ipynb): 
+    Takes a 2D input image, generates a histogram of the image using the value in num_bins and returns only the histogram values
+    Use scikit image library.
     
         
 * [label_binary_image_and_count_labels](label_binary_image_and_count_labels.ipynb): 
     Takes a binary image provided as numpy array, applies connected component labeling to it, 
-    counts the labeled objects and returns the count as single number.
+    counts the labeled objects and returns the count as single number.Use scikit image library.
     
         
 * [label_sequentially](label_sequentially.ipynb): 
     Takes a label_image provided as numpy array with n labels and relabels the objects, 
     to make sure all integer labels between 0 and n are used and no gaps are there. 
-    The resulting label image is returned as numpy array.
+    The resulting label image is returned as numpy array.Use scikit image library.
     
         
 * [list_image_files_in_folder](list_image_files_in_folder.ipynb): 
@@ -128,12 +136,12 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
         
 * [measure_aspect_ratio_of_regions](measure_aspect_ratio_of_regions.ipynb): 
     Takes a label image provided as numpy array and returns a pandas dataframe
-    with a column containing measurements for aspect_ratio of the objects.
+    with a column containing measurements for aspect_ratio of the objects.Use scikit image library.
     
         
 * [measure_intensity_of_labels](measure_intensity_of_labels.ipynb): 
     Takes a label image and an intensity image, and returns a list of mean intensities 
-    of all pixels in the intensity image, belonging to a given label.
+    of all pixels in the intensity image, belonging to a given label.Use scikit image library.
     
         
 * [measure_intensity_over_time](measure_intensity_over_time.ipynb): 
@@ -147,13 +155,13 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
     
         
 * [measure_pixel_count_of_labels](measure_pixel_count_of_labels.ipynb): 
-    Takes a label image provided as numpy array and returns a list of counts of number of pixels per label.
+    Takes a label image provided as numpy array and returns a list of counts of number of pixels per label.Use scikit image library.
     
         
 * [measure_properties_of_regions](measure_properties_of_regions.ipynb): 
     Takes a label image and an intensity image, both provided as numpy array, 
     and returns pandas dataframe with measurements for area, perimeter and 
-    mean_intensity of the labeled objects.
+    mean_intensity of the labeled objects.Use scikit image library.
     
         
 * [open_image_read_voxel_size](open_image_read_voxel_size.ipynb): 
@@ -186,12 +194,12 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
 * [region_growing_segmentation](region_growing_segmentation.ipynb): 
     Segments an image provided as numpy array using the region-growing algorithm 
     (sometimes called flood-filling algorithm) starting from a single point provided as y-x tuple. 
-    Returns the resulting segmentation binary image as numpy array.
+    Returns the resulting segmentation binary image as numpy array.Use scikit image library.
     
         
 * [remove_labels_on_edges](remove_labels_on_edges.ipynb): 
     Takes a label_image given as numpy array, removes all objects which touch the image border
-    and returns the resulting label image.
+    and returns the resulting label image.Use scikit image library.
     
         
 * [remove_noise_edge_preserving](remove_noise_edge_preserving.ipynb): 
@@ -228,7 +236,7 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
 * [subtract_background_tophat](subtract_background_tophat.ipynb): 
     Applies a top-hat filter with a given radius to an image provided as numpy array with 
     dark background (low values) and bright foreground (high values). The resulting 
-    background-subtracted image is returned as numpy array.
+    background-subtracted image is returned as numpy array.Use scikit image library.
     
         
 * [sum_images](sum_images.ipynb): 
@@ -259,19 +267,19 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
 * [workflow_batch_process_folder_count_labels](workflow_batch_process_folder_count_labels.ipynb): 
     This functions goes through all .tif image files in a specified folder full of label images, 
     loads the label images and counts unique labels in each image. 
-    It returns a dictionary with filenames as keys and corresponding counts as values.
+    It returns a dictionary with filenames as keys and corresponding counts as values.Use scikit image library.
     
         
 * [workflow_batch_process_folder_measure_intensity](workflow_batch_process_folder_measure_intensity.ipynb): 
     This functions goes through all .tif image files in a specified image folder 
     and corresponding label images in another labels folder. 
     It loads the images and corresponding label images, and measures minimum, mean and maximum intensity of all labeled objects.
-    The function returns a dataframe with five columns: min_intensity, mean_intensity, max_intensity, label and filename.
+    The function returns a dataframe with five columns: min_intensity, mean_intensity, max_intensity, label and filename.Use scikit image library.
     
         
 * [workflow_segmentation_counting](workflow_segmentation_counting.ipynb): 
     This function segments objects in an image provided as numpy array with intensity above average 
-    and returns their count as number.
+    and returns their count as number.Use scikit image library.
     
         
 * [workflow_segmentation_measurement_summary](workflow_segmentation_measurement_summary.ipynb): 
@@ -279,7 +287,8 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
     * threshold intensity input image provided as numpy array using Otsu's method
     * label connected components
     * measure area of the labeled objects
-    * determine mean area of all objects and return it
+    * determine mean area of all objects and return it.
+    Use scikit image library.
     
         
 * [workflow_segment_measure_umap](workflow_segment_measure_umap.ipynb): 
@@ -289,7 +298,7 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
     measures area, perimeter, mean_intensity, minor and major axis of the labeled objects, 
     and produces a UMAP from the given measurements. 
     The two UMAP vectors are saved as `umap0` and `umap1` togther with the measurements in a dataframe. 
-    The function returns this dataframe.
+    The function returns this dataframe.Use scikit image library.
     
         
 * [workflow_watershed_segmentation_correction_measurement](workflow_watershed_segmentation_correction_measurement.ipynb): 
@@ -300,5 +309,6 @@ This list of 57 use-cases is auto-generated. Do not modify this file.
       detected minima to retrieve a label image
     * remove all objects which touch the image border
     * measure the area of all remaining objects together and return it
+    Use scikit image library.
     
         
